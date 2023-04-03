@@ -63,13 +63,16 @@
           padding: "10px"
         }
         // No need to change anything ABOVE this line ^
-
+// theres nothing inside the onclick {}
+// onclick needs to be capitilized on the shuffle
+// its missing a div
         return (
+          <div>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}> 
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -80,6 +83,7 @@
                 </div>
               )
             })}
+            </div>
           </div>
         )
       }
